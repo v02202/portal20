@@ -397,3 +397,7 @@ def species_detail(request, pk):
     #rows = RawDataOccurrence.objects.values('taibif_dataset_name', 'decimallatitude', 'decimallongitude').filter(scientificname=taxon.name).all()
     scname = '{} {}'.format(taxon.parent.name, taxon.name)
     return {'data': {} }
+
+
+
+

@@ -1,5 +1,6 @@
 from django.urls import path
 
+
 from . import views
 from django.conf.urls.i18n import i18n_patterns
 from django.conf.urls import include
@@ -43,6 +44,12 @@ urlpatterns = [
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps},
      name='django.contrib.sitemaps.views.sitemap'),
     path("robots.txt", robots_txt),
+    path('test', views.test, name='test'),
+    path('test2', views.ChartYear, name='test2'),
+    path('test3', views.ChartMonth, name='test3'),
+
+
+
 
 ]
 
